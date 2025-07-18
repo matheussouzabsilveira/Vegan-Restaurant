@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.containerSobre{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E5D4C1;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 150px;
+}
+
+.content{
+    width: 60%;
+    padding-right: 20px;
+}
+
+.content h1{
+    margin-bottom: 10px;
+    font-family: Inspiration;
+    font-weight: 400;
+    font-size: 5.5em;
+}
+
+.content p{
+    width: 90%;
+    font-family: Italiana;
+    font-size: 1.2em;
+}
+
+.imageSobre{
+    width: 40%;
+}
+
+.imageSobre img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}

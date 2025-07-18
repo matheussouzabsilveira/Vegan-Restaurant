@@ -1,0 +1,67 @@
+.finalizarPedido{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finalizarPedidoContainer{
+    flex: 0 1 800px;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.finalizarPedidoContent{
+    flex: 1 1 auto;
+}
+
+.quantidade{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.quantidade btn{
+    background-color: #597459;
+    color: #E5D4C1;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.desc{
+    margin-bottom: 10px;
+}
+
+.obs{
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    color: #597459;
+}
+
+.voltar{
+    position: absolute;
+    top: 10px;
+    left: 5vw;
+    cursor: pointer;
+}
