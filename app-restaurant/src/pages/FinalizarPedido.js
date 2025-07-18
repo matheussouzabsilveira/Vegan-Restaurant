@@ -23,7 +23,7 @@ function FinalizarPedido() {
     <div className={style.finalizarPedido}>
         <HeaderCarrinho />
         <div className={style.finalizarPedidoContainer}>
-        <img src={img}/>
+        <img className={style.img} src={img}/>
             <div className={style.finalizarPedidoContent}>
                 <div className={style.quantidade}>
                     <h1>{banco.titulo}</h1>

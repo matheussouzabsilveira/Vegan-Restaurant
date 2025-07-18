@@ -30,7 +30,8 @@
 
 .image{
     width: 50%;
-    text-align: center;
+    height: auto;
+    text-align: right;
 }
 
 .image img{

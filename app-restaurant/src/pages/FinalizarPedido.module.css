@@ -9,7 +9,7 @@
     flex: 0 1 800px;
 }
 
-img{
+.img{
     margin: 0 auto;
     display: block;
     max-width: 500px;
