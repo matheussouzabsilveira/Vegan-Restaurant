@@ -1,0 +1,30 @@
+.carrinho{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-flow:  row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1500px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #597459;
+    color: #E5D4C1;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+input:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

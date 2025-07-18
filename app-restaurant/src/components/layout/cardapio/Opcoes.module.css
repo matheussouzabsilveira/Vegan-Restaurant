@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.opcoesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 180px;
+    width: 100%;
+    background-color: #597459;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #E5D4C1;
+}
+
+.opcoesContainer:hover{
+    opacity: 0.8;
+}
+
+.img{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content h2{
+    font-family: Inspiration;
+    font-weight: 400;
+    font-size: 2.1rem;
+}
+
+.content p{
+    font-family: Italiana;
+    font-size: 1.1rem;
+}
+
+
+.preco{
+    font-size: 1.2em!important;
+}
