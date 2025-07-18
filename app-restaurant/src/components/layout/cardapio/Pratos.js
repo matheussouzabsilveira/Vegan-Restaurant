@@ -19,7 +19,7 @@ function Pratos(props) {
           <Opcoes img="" titulo="Buddha Bowl Supremo" desc="tomate, alface, azeitona, arroz, batata" preco="R$75.00"/>
           <Opcoes img="" titulo="Buddha Bowl Supremo" desc="tomate, alface, azeitona, arroz, batata" preco="R$75.00"/>
         </div>
-        <h1>Sboremesas Deliciosas</h1>
+        <h1>Sobremesas Deliciosas</h1>
         <div className={style.pratos}>
           <Opcoes img="" titulo="Buddha Bowl Supremo" desc="tomate, alface, azeitona, arroz, batata" preco="R$75.00"/>
           <Opcoes img="" titulo="Buddha Bowl Supremo" desc="tomate, alface, azeitona, arroz, batata" preco="R$75.00"/>

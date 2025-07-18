@@ -9,9 +9,6 @@ let banco = JSON.parse(localStorage.getItem("banco"));
 console.log(banco);
 function FinalizarPedido() {
   const [num, setNum] = useState(1);
-  function voltar(){
-    window.location.href = "/cardapio";
-  }
 
   function mais() {
     setNum(num + 1);

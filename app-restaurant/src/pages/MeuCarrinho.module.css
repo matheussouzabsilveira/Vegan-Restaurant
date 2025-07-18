@@ -5,13 +5,14 @@
 }
 
 .carrinhoContainer{
-    width: 70%;
+    width: 75%;
     padding: 20px;
 }
 
 .finalizarContainer{
-    width: 30%;
+    width: 25%;
     padding-top: 20px;
+    padding-right: 20px;
 }
 
 .pedidosDoCarrinho{
@@ -69,7 +70,7 @@
 
 .finalizarPedido{
     background-color: white;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
     border-radius: 20px;
