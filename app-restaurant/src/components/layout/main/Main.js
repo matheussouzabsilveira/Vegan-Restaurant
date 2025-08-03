@@ -15,7 +15,7 @@ function Main() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat dui non suscipit tempor. Proin ultrices elit vel sapien aliquam, ac posuere ante aliquam. In ut tempus magna. Praesent vel dolor vitae nibh bibendum tincidunt vel nec orci. Quisque hendrerit tellus non urna tincidunt commodo.</p>
         </div>
         <div className={style.image}>
-            <img src={especial} />
+            <img src={especial} alt="Prato especial do dia" />
         </div>
     </div>
   )

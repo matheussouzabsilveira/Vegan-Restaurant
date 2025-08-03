@@ -11,7 +11,7 @@ function SobreNosContent() {
             </p>
         </div>
         <div className={style.imageSobre}>
-            <img src={imageSobre} />
+            <img src={imageSobre} alt="Sobre nós" />
         </div>
     </div>
   )

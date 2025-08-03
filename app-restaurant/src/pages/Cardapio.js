@@ -8,15 +8,13 @@ function Cardapio() {
   // Estado para armazenar os pedidos do carrinho e o preço total
   const [orders, setOrders] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   // Função para buscar os pedidos da API
   const fetchOrders = async () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('https://elegant-imagination-production.up.railway.app/orders');
+      const response = await fetch('http://localhost:5000/orders');
       
       if (!response.ok) {
         throw new Error('Falha ao buscar os pedidos.');

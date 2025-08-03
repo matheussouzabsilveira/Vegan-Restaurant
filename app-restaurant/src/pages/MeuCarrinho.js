@@ -15,7 +15,7 @@ function MeuCarrinho() {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch('https://elegant-imagination-production.up.railway.app/orders');
+            const response = await fetch('http://localhost:5000/orders');
             
             if (!response.ok) {
                 throw new Error('Falha ao buscar os pedidos.');
@@ -40,7 +40,7 @@ function MeuCarrinho() {
     // Ela recebe o ID do pedido e faz a requisição DELETE para a API.
     const handleRemoveOrder = async (orderId) => {
         try {
-            const response = await fetch(`https://elegant-imagination-production.up.railway.app/orders/${orderId}`, {
+            const response = await fetch(`http://localhost:5000/orders/${orderId}`, {
                 method: 'DELETE',
             });
 
@@ -60,7 +60,7 @@ function MeuCarrinho() {
     // Função para finalizar a compra, limpando todos os pedidos do carrinho.
     const handleFinalizarCompra = async () => {
         try {
-            const response = await fetch('https://elegant-imagination-production.up.railway.app/orders', {
+            const response = await fetch('http://localhost:5000/orders', {
                 method: 'DELETE',
             });
             if (!response.ok) {
