@@ -1,7 +1,5 @@
 import React from 'react'
 import style from "./Opcoes.module.css"
-import img from "../../../images/pratoVegano.webp"
-
 
   let banco = JSON.parse(localStorage.getItem("banco"));
   if(banco == null){
@@ -22,18 +20,30 @@ function Opcoes(props) {
     console.log('h2:', h2);
     console.log('desc:', desc);
     console.log('preco:', preco);
+    // Pega o preço diretamente da prop, já que é passado como string formatada
+    const precoTexto = props.preco; // Já vem como "R$75.00"
+    
+    // Converte para número (remove R$, troca vírgula por ponto e converte para float)
+    const precoNumerico = parseFloat(
+      precoTexto
+        .replace('R$', '')
+        .trim()
+        .replace(',', '.')
+    );
+
     banco = {
       titulo: h2.innerHTML,
       desc: desc.innerHTML,
-      preco: preco.innerHTML
+      preco: isNaN(precoNumerico) ? 0 : precoNumerico,
+      img: props.img // Adicionando a URL da imagem ao objeto banco
     }
     localStorage.setItem("banco", JSON.stringify(banco));
     window.location.href = "/finalizar-pedido";
   }
   return (
     <div onClick={conteudoDoPedido} className={style.opcoesContainer}>
-        <div className={style.img}>
-            <img src={img} />
+        <div className={style.Opcoesimg}>
+            <img src={props.img} alt={'Prato vegano'} />
         </div>
         <div className={style.content}>
             <h2>{props.titulo}</h2>
