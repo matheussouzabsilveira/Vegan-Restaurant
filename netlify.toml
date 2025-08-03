@@ -1,3 +1,4 @@
 [build]
-  publish = "app-restaurant/build"
-  base = "app-restaurant"
+base = "app-restaurant"
+command = "npm run build"
+  publish = "build"
