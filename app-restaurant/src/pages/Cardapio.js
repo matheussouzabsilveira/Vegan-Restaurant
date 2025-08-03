@@ -6,7 +6,7 @@ import style from "./Cardapio.module.css";
 
 // Define a URL da API usando a variável de ambiente.
 // Ela usará a URL do Railway se estiver no Netlify, ou 'http://localhost:5000' para desenvolvimento local.
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = "https://elegant-imagination-production.up.railway.app";
 
 function Cardapio() {
   // Estado para armazenar os pedidos do carrinho, o preço total e o estado de requisição.
@@ -110,7 +110,7 @@ export default Cardapio;
 //     setLoading(true);
 //     setError(null);
 //     try {
-//       const response = await fetch('http://localhost:5000/orders');
+//       const response = await fetch('https://elegant-imagination-production.up.railway.app');
       
 //       if (!response.ok) {
 //         throw new Error('Falha ao buscar os pedidos.');

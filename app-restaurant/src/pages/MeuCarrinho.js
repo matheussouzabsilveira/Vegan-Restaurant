@@ -4,6 +4,9 @@ import style from "./MeuCarrinho.module.css";
 import Pedidos from "../components/layout/carrinho/Pedidos.js";
 import HeaderCarrinho from '../components/layout/carrinho/HeaderCarrinho.js';
 
+// URL base da API
+const API_URL = "https://elegant-imagination-production.up.railway.app";
+
 function MeuCarrinho() {
     // Estados para armazenar os pedidos, o estado de carregamento e erros.
     const [orders, setOrders] = useState([]);
@@ -15,10 +18,12 @@ function MeuCarrinho() {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch('http://localhost:5000/orders');
+            // CORREÇÃO: A URL agora inclui o endpoint "/orders"
+            const response = await fetch(`${API_URL}/orders`);
             
             if (!response.ok) {
-                throw new Error('Falha ao buscar os pedidos.');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Falha ao buscar os pedidos.');
             }
             
             const data = await response.json();
@@ -40,12 +45,14 @@ function MeuCarrinho() {
     // Ela recebe o ID do pedido e faz a requisição DELETE para a API.
     const handleRemoveOrder = async (orderId) => {
         try {
-            const response = await fetch(`http://localhost:5000/orders/${orderId}`, {
+            // CORREÇÃO: A URL agora inclui o endpoint "/orders" e o orderId
+            const response = await fetch(`${API_URL}/orders/${orderId}`, {
                 method: 'DELETE',
             });
 
             if (!response.ok) {
-                throw new Error('Falha ao remover o pedido.');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Falha ao remover o pedido.');
             }
 
             // Atualiza a lista de pedidos no estado, removendo o pedido excluído.
@@ -60,11 +67,13 @@ function MeuCarrinho() {
     // Função para finalizar a compra, limpando todos os pedidos do carrinho.
     const handleFinalizarCompra = async () => {
         try {
-            const response = await fetch('http://localhost:5000/orders', {
+            // CORREÇÃO: A URL agora inclui o endpoint "/orders"
+            const response = await fetch(`${API_URL}/orders`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
-                throw new Error('Falha ao finalizar a compra.');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Falha ao finalizar a compra.');
             }
             // Limpa todos os pedidos do estado.
             setOrders([]);
@@ -153,6 +162,7 @@ function MeuCarrinho() {
 }
 
 export default MeuCarrinho;
+
 
 // import React from 'react';
 // import { useState, useEffect } from 'react';
