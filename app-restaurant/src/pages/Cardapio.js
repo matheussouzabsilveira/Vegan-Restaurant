@@ -8,6 +8,8 @@ function Cardapio() {
   // Estado para armazenar os pedidos do carrinho e o preço total
   const [orders, setOrders] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // Função para buscar os pedidos da API
   const fetchOrders = async () => {
