@@ -5,7 +5,7 @@
 .main{
     background-color: #E5D4C1;
     display: flex;
-    flex-flow: row column;
+    flex-flow: row row;
     align-items: center;
     justify-content: space-between;
     padding-left: 5vw;
