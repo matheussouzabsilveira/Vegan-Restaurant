@@ -13,8 +13,7 @@ function Header() {
             <Link className={style.links} to="/">Home</Link>
             <Link className={style.links} to="/sobre-nos">Sobre Nós</Link>
             <Link className={style.links} to="/cardapio">Cardápio</Link>
-            <Link className={style.links} to="/cardapio">Login</Link>
-            <Link className={style.cadastro} to="/cardapio">Cadastro</Link>
+            <Link className={style.links} to="/contato">Contato</Link>
         </div>
     </div>
   )

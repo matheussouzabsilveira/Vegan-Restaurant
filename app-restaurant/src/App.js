@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SobreNos from './pages/SobreNos';
 import Cardapio from './pages/Cardapio';
-import UserList from "./pages/UserList"
 import FinalizarPedido from './pages/FinalizarPedido';
 import MeuCarrinho from "./pages/MeuCarrinho"
+import Contato from './pages/Contato';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre-nos" element={<SobreNos />} />
           <Route path="/cardapio" element={<Cardapio />} />
-          <Route path="/lista" element={<UserList />} />
           <Route path="/finalizar-pedido" element={<FinalizarPedido />} />
           <Route path="/carrinho" element={<MeuCarrinho />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </Router>
     </div>
